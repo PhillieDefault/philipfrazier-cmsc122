@@ -1,0 +1,65 @@
+body {
+    background-color: #f5f5dc;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif sans-serif;
+    color: #333;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: darkred;
+}
+
+h3 {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    color: #555;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.appetizers {
+    background-color: #ffe4c4;
+    border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.entrees {
+    background-color: #e6e6fa;
+    border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.drinks {
+    background-color: #d8f3dc;
+    border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: right;
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: right;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
