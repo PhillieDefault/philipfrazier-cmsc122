@@ -1,0 +1,200 @@
+body {
+    background-color: #d4ff00;
+    color: #31004d;
+    font-family: "Comic Neue", cursive;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0;
+    text-align: center;}
+
+.page-shell {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 18px;
+    padding: 18px;}
+
+.panel {
+    background-color: #ff8c00;
+    border-style: ridge;
+    border-width: 8px;
+    border-color: #00b7ff;
+    margin: 8px;
+    padding: 18px;}
+
+.hero-box {
+    flex-basis: 100%;
+    order: 1;
+    background-color: #ff3cac;
+    color: #fff700;
+    text-transform: uppercase;}
+
+.hero-box h1 {
+    font-family: "Creepster", cursive;
+    font-size: 64px;}
+
+.side-box {
+    flex: 1 1 220px;
+    order: 2;
+    background-color: #7dff9b;}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 2;
+    flex-basis: 420px;
+    order: 3;
+    background-color: #00e5ff;}
+
+.footer-box {
+    flex-basis: 100%;
+    order: 4;
+    background-color: #111111;
+    color: #ffffff;}
+
+.content-card {
+    width: 90%;
+    background-color: #fff0f5;
+    border-style: dashed;
+    border-width: 6px;
+    border-color: #ff0000;
+    margin: 14px;
+    padding: 16px;}
+
+.weird-shadow {
+    text-shadow: 3px 3px #00ffea;}
+
+.warning-note {
+    background-color: #000000;
+    color: #f7ff00;
+    border-style: dotted;
+    border-width: 4px;
+    border-color: #ffffff;
+    padding: 10px;}
+
+.blinkish {
+    letter-spacing: 4px;
+    font-size: 30px;}
+
+.mascot {
+    width: 220px;
+    max-width: 100%;
+    border-style: double;
+    border-width: 10px;
+    border-color: #ffffff;
+    background-color: #00ffff;
+    padding: 8px;}
+
+.nav-list {
+    list-style-type: square;
+    padding: 0; }
+
+.nav-list li {
+    margin: 16px 0;}
+
+.nav-list a {
+    color: #6a0013;
+    background-color: #fff59d;
+    padding: 4px 8px;}
+
+.nav-list a:hover {
+    background-color: #ff00c8;}
+
+.deal-table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-top: 12px dotted #ff00ff;
+    border-bottom: 12px dotted #ff00ff;
+    border-left: 5px solid #003cff;
+    border-right: 5px solid #003cff;
+    margin-top: 12px;}
+
+.deal-table caption {
+    font-size: 28px;
+    color: #ff0000;
+    margin-bottom: 10px;}
+
+.deal-table th,
+.deal-table td {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #000000;
+    padding: 12px;}
+
+.changeTable {
+    background-color: #8aff00;}
+
+.mini-columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 14px;}
+
+.event-box {
+    flex: 1 1 160px;
+    background-color: #ffe066;
+    border-style: groove;
+    border-width: 7px;
+    border-color: #8b0000;
+    padding: 12px;}
+
+.external-list {
+    list-style-type: none;
+    padding: 0;}
+
+.external-list li {
+    margin: 14px 0;}
+
+#topBanner {
+    border-color: #ffffff;}
+
+#vipSticker {
+    background-color: #ff0000;
+    color: #ffff00;
+    font-size: 26px;
+    margin-top: 20px;
+    padding: 12px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000000;}
+
+#googleLink,
+#wikiLink,
+#museumLink {
+    color: #002eff;
+    font-size: 22px;}
+
+#googleLink:hover,
+#wikiLink:hover,
+#museumLink:hover {
+    color: #fff0f5;
+    font-size: 34px;}
+
+a:visited {
+    color: #7a007a;}
+
+tr:nth-child(even) {
+    background-color: #ffd1dc;}
+
+.special-box:hover {
+    transform: rotate(-2deg);}
+
+h2:first-letter {
+    font-size: 180%;
+    color: #ff0000;}
+
+@media (max-width: 700px) {
+    .page-shell {
+        flex-direction: column;
+        align-items: center;}
+
+    .main-box,
+    .side-box {
+        width: 90% }}
