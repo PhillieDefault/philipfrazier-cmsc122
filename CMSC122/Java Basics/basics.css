@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #1f2933;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+header {
+    background-color: #dbeafe;
+    border: 2px solid #93c5fd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 320px;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.exercise-list {
+    line-height: 1.9;
+}
+
+a {
+    color: #1d4ed8;
+}
+
+a:hover {
+    color: #b91c1c;
+}
+
+.button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input {
+    width: 100%;
+    max-width: 280px;
+    padding: 8px;
+    margin-top: 4px;
+}
+
+.result {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.small-note {
+    color: #475569;
+    font-size: 0.95rem;
+}

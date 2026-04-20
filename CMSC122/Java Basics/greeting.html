@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Form</title>
+    <link rel="stylesheet" href="basics.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Greeting Form</h1>
+            <p><a href="index.html">Back to index</a></p>
+        </header>
+
+        <section class="card">
+            <form>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName">
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+
+                <button type="button" class="button" onclick="showGreeting()">Say Hello</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        function showGreeting() {
+            var first = document.getElementById("firstName").value;
+            var last = document.getElementById("lastName").value;
+            alert("Hello, " + first + " " + last);
+        }
+    </script>
+</body>
+</html>

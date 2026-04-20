@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="basics.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Guessing Game</h1>
+            <p><a href="index.html">Back to index</a></p>
+        </header>
+
+        <section class="card">
+            <p class="small-note">This program stores a number from 1 to 10 and asks the user to guess it.</p>
+            <script>
+                var secretNumber = 7;
+                var userGuess = parseInt(prompt("Guess a number from 1 to 10:"), 10);
+
+                if (userGuess === secretNumber) {
+                    document.writeln("<p>Good Work</p>");
+                } else {
+                    document.writeln("<p>Not matched</p>");
+                }
+            </script>
+        </section>
+    </div>
+</body>
+</html>
