@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="game-panel" aria-labelledby="gameTitle">
+      <div class="top-bar">
+        <div>
+          <p class="eyebrow">Player vs Computer</p>
+          <h1 id="gameTitle">Tic Tac Toe</h1>
+        </div>
+
+        <label class="mode-toggle">
+          <input type="checkbox" id="darkToggle" onclick="darkMode()">
+          <span>Dark Mode</span>
+        </label>
+      </div>
+
+      <p id="status" class="status">Your turn. You are X.</p>
+
+      <form id="boardForm" class="board" aria-label="Tic Tac Toe board">
+        <input class="cell" id="cell0" maxlength="1" aria-label="Top left square" onclick="playTurn(0)" oninput="store()">
+        <input class="cell" id="cell1" maxlength="1" aria-label="Top middle square" onclick="playTurn(1)" oninput="store()">
+        <input class="cell" id="cell2" maxlength="1" aria-label="Top right square" onclick="playTurn(2)" oninput="store()">
+        <input class="cell" id="cell3" maxlength="1" aria-label="Middle left square" onclick="playTurn(3)" oninput="store()">
+        <input class="cell" id="cell4" maxlength="1" aria-label="Middle square" onclick="playTurn(4)" oninput="store()">
+        <input class="cell" id="cell5" maxlength="1" aria-label="Middle right square" onclick="playTurn(5)" oninput="store()">
+        <input class="cell" id="cell6" maxlength="1" aria-label="Bottom left square" onclick="playTurn(6)" oninput="store()">
+        <input class="cell" id="cell7" maxlength="1" aria-label="Bottom middle square" onclick="playTurn(7)" oninput="store()">
+        <input class="cell" id="cell8" maxlength="1" aria-label="Bottom right square" onclick="playTurn(8)" oninput="store()">
+      </form>
+
+      <div class="actions">
+        <button type="button" onclick="store()">Store Board</button>
+        <button type="button" class="secondary" onclick="reset()">Reset Board</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
